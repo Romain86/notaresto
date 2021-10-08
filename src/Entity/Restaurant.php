@@ -52,6 +52,7 @@ class Restaurant
 
     public function __construct()
     {
+        $this->setCreatedAt(new \DateTimeImmutable());
         $this->restaurantPictures = new ArrayCollection();
         $this->reviews = new ArrayCollection();
     }

@@ -52,6 +52,7 @@ class Review
 
     public function __construct()
     {
+        $this->setCreatedAt(new \DateTimeImmutable());
         $this->childs = new ArrayCollection();
     }
 
